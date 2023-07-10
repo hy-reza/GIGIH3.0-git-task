@@ -74,6 +74,14 @@
       border-bottom: 1px solid #eee;
     }
   </style>
+  <script>
+    function addToPlaylist(title, artist) {
+      var playlist = document.getElementById("playlist");
+      var songEntry = document.createElement("li");
+      songEntry.textContent = title + " - " + artist;
+      playlist.appendChild(songEntry);
+    }
+  </script>
 </head>
 <body>
   <div class="section">
